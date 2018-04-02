@@ -7,14 +7,15 @@ nested = require("postcss-nested"),
 cssImport = require("postcss-import");
 
 gulp.task('default', function() {
-    console.log("Lmao");
+    gulp.start("styles");
 });
 
 gulp.task("styles", function() {
-    return gulp.src("./assets/styles/style.css")
+    return gulp.src("./app/assets/styles/styles.css")
     .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
-    .pipe(gulp.dest("./assets/temp/styles/styles.css"));
+    .pipe(gulp.dest("./app/temp/styles/"));
 });
+
 
 gulp.task('watch', function() {
     watch("./index.html", function() {
