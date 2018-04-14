@@ -1,11 +1,16 @@
 ul {
     list-style: none;
     float: right;
+    display: block;
     li {
         display: inline-block;
-
+        margin-right: 30px;
         a {
             text-decoration: none;
+            color: $mainGray;
         }
     }
+}
+img{
+    float: right;
 }
