@@ -1,6 +1,7 @@
 .wrapper{
     margin: 0 20px;
-
+    overflow: hidden;
+    
     @mixin atLarge{
         margin: 0 11%;
     }

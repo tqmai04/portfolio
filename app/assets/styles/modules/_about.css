@@ -1,7 +1,11 @@
 .about {
     background-color: $mainBlue;
+    color: white;
+    padding: 1.4rem;
 
-    h2{
-        color: white;
+    img{
+        width: 100px;
+        margin: 2em auto;
+        display: block;
     }
 }
