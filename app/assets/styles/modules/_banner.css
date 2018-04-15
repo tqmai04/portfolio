@@ -1,16 +1,66 @@
 ul {
     list-style: none;
-    float: right;
     display: block;
+    padding: 0px;
     li {
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 80px;
         a {
             text-decoration: none;
-            color: $mainGray;
+            color: $mainBlue;
+            font-weight: 300;
         }
     }
 }
 img{
-    float: right;
+   width: 100%;
 }
+nav{
+    display: block;
+    padding-top: 25px;
+    font-size: 1.4rem;
+}
+
+.banner {
+    height: 100vh;
+    &__intro{
+        /*
+        font-size: 3.6rem;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        line-height: 5.4rem;*/
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        line-height: 2.2rem;
+
+        @mixin atSmall {
+            font-size: 3.6rem;
+        }
+
+        @mixin atMedium {
+            font-size: 4.8rem;
+        }
+        @mixin atLarge{
+            font-size: 3.6rem;
+            letter-spacing: 0.2rem;
+            line-height: 5.4rem;
+            margin: 4rem auto;
+
+        }
+    }
+
+    &__blueText {
+        color: $mainBlue;
+    }
+
+    &__orgText{
+        color: $mainOrange;
+    }
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }

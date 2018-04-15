@@ -1,0 +1,7 @@
+.about {
+    background-color: $mainBlue;
+
+    h2{
+        color: white;
+    }
+}
