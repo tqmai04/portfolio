@@ -42,3 +42,12 @@ p {
     }
     
 }
+body {
+    opacity: 1;
+    transition: 1.5s opacity;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: none;
+}

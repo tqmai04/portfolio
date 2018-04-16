@@ -391,6 +391,16 @@ p {
 }
     }
 
+body {
+    opacity: 1;
+    transition: 1.5s opacity;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 ul {
     list-style: none;
     display: block;
@@ -626,7 +636,7 @@ nav{
 .projects{
         width: 800px;
         margin: 0 auto;
-        padding: 1.4rem 0 4rem 0
+        padding: 1.4rem 0 0 0
 }
     }
 
@@ -640,6 +650,16 @@ nav{
         color: #da7701;
         text-decoration: none;
     }
+
+.projects--sample{
+        border-bottom: 1px solid #a8a8a8;
+        margin-bottom: 2em;
+    }
+
+.projects--sample:last-child {
+            border-bottom: none;
+            margin-bottom: none;
+        }
 
 @media (min-width: 1200px){
 

@@ -4,7 +4,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class RevealOnScroll {
 
     constructor() {
-        this.itemsToReveal = $(".item");
+        this.itemsToReveal = $(".item, .projects--sample, .contact--content");
         this.hideInitially();
         this.createWaypoints();
     }

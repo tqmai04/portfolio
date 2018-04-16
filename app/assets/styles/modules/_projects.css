@@ -5,7 +5,7 @@
     @mixin atLarge {
         width: 800px;
         margin: 0 auto;
-        padding: 1.4rem 0 4rem 0;
+        padding: 1.4rem 0 0 0;
     }
     h3 {
         color: $mainOrange;
@@ -19,6 +19,14 @@
     }
 
     &--sample{
+        border-bottom: 1px solid $mainGray;
+        margin-bottom: 2em;
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: none;
+        }
+
         @mixin atLarge {
             padding-bottom: 2rem;
         }
