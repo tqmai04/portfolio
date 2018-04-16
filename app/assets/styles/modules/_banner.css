@@ -4,7 +4,7 @@ ul {
     padding: 0px;
     li {
         
-        border-bottom: 2px solid $mainBlue;
+        border-bottom: 2px solid $mainGray;
         padding: 10px;
         a {
             text-decoration: none;
