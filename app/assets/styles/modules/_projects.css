@@ -1,11 +1,16 @@
 .projects{
     text-align: center;
     color: $mainBlue;
-    width: 800px;
-    margin: 0 auto;
-
+    
+    @mixin atLarge {
+        width: 800px;
+        margin: 0 auto;
+        padding: 1.4rem 0 4rem 0;
+    }
     h3 {
         color: $mainOrange;
+        margin: 0;
+        margin-bottom: 1em;
     }
 
     a {
@@ -14,36 +19,60 @@
     }
 
     &--sample{
-        padding-bottom: 2rem;
+        @mixin atLarge {
+            padding-bottom: 2rem;
+        }
     }
 
     &--image {
-        width: 600px;;
+        width: 100%;
         display: block;
         margin: 0 auto;
+        
+        border-radius: 6px;
+
+        @mixin atMedium {
+            width: 600px;
+            border: 1px solid $mainGray;
+        }
     }
 
     &--btn {
-        border: 2px solid $mainGray;
+        border: 1px solid $mainGray;
         background-color: #FFF;
         text-align: center;
         padding: 10px 20px;
         color: $mainOrange;
         border-radius: 8px;
-        margin-bottom: 1.2rem;
+        margin: 1em 0;
         font-size: 1.2rem;
+
+        @mixin atLarge {
+            margin: 2em 0 0 0;
+        }
     }
 
     &--btn:hover {
         background-color: $mainOrange;
         color: $mainBlue;
         cursor: pointer;
-        border: 2px solid $mainOrange;
+        border: 1px solid $mainOrange;
+    }
+
+    &skills {
+        width: 800px;
+        margin: 0 auto;
     }
 
     &--skills li{
         background-color: $mainGray;
         color: #FFF;
-        margin-right: 5px;
+        display: inline-block;
+        margin: 3px;
+        border-bottom: none;
+
+        @mixin atLarge {
+            margin-right: 5px;
+        }
     }
 }

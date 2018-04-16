@@ -1,4 +1,29 @@
 .contact {
     background-color: $mainOrange;
     height: 300px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+
+    &--content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    
+    &--text {
+        font-size: 1.6rem;
+    }
+    &--social-icon {
+        width: 40px;
+        margin: 20px;
+        
+        @mixin atLarge {
+            width: 50px;
+            margin: 30px;
+        }
+        
+    }
 }

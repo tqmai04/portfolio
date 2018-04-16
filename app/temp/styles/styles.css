@@ -353,6 +353,13 @@ h2{
     letter-spacing: normal;
 }
 
+@media (min-width: 1200px){
+
+h2{
+        font-size: 2rem
+}
+    }
+
 h3{
     text-align: center;
     font-size: 1.4rem;
@@ -371,9 +378,18 @@ html {
 }
 
 p {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
+    line-height: 1.5rem;
+    
 }
+
+@media (min-width: 1200px){
+
+p {
+    font-size: 1.1rem;
+    line-height: 2.2rem
+    
+}
+    }
 
 ul {
     list-style: none;
@@ -538,7 +554,7 @@ nav{
 }
 
 .wrapper{
-    margin: 0 20px;
+    margin: 0 5px;
     overflow: hidden;
 }
 
@@ -559,13 +575,27 @@ nav{
 .about {
     background-color: #101829;
     color: #a8a8a8;
-    padding: 1.4rem 0 4rem 0;
+    padding-bottom: 2em;
 }
 
+@media (min-width: 1200px){
+
+.about {
+    padding: 1.4rem 0 4rem 0
+}
+    }
+
 .about img{
-        width: 100px;
+        width: 80px;
         margin: 2em auto;
         display: block;
+    }
+
+@media (min-width: 1200px){
+
+.about img{
+            width: 100px
+    }
     }
 
 .about p {
@@ -589,12 +619,21 @@ nav{
 .projects{
     text-align: center;
     color: #101829;
-    width: 800px;
-    margin: 0 auto;
 }
+
+@media (min-width: 1200px){
+
+.projects{
+        width: 800px;
+        margin: 0 auto;
+        padding: 1.4rem 0 4rem 0
+}
+    }
 
 .projects h3 {
         color: #da7701;
+        margin: 0;
+        margin-bottom: 1em;
     }
 
 .projects a {
@@ -602,38 +641,72 @@ nav{
         text-decoration: none;
     }
 
+@media (min-width: 1200px){
+
 .projects--sample{
-        padding-bottom: 2rem;
+            padding-bottom: 2rem
+    }
     }
 
 .projects--image {
-        width: 600px;;
+        width: 100%;
         display: block;
         margin: 0 auto;
+        
+        border-radius: 6px;
+    }
+
+@media (min-width: 800px){
+
+.projects--image {
+            width: 600px;
+            border: 1px solid #a8a8a8
+    }
     }
 
 .projects--btn {
-        border: 2px solid #a8a8a8;
+        border: 1px solid #a8a8a8;
         background-color: #FFF;
         text-align: center;
         padding: 10px 20px;
         color: #da7701;
         border-radius: 8px;
-        margin-bottom: 1.2rem;
+        margin: 1em 0;
         font-size: 1.2rem;
+    }
+
+@media (min-width: 1200px){
+
+.projects--btn {
+            margin: 2em 0 0 0
+    }
     }
 
 .projects--btn:hover {
         background-color: #da7701;
         color: #101829;
         cursor: pointer;
-        border: 2px solid #da7701;
+        border: 1px solid #da7701;
+    }
+
+.projectsskills {
+        width: 800px;
+        margin: 0 auto;
     }
 
 .projects--skills li{
         background-color: #a8a8a8;
         color: #FFF;
-        margin-right: 5px;
+        display: inline-block;
+        margin: 3px;
+        border-bottom: none;
+    }
+
+@media (min-width: 1200px){
+
+.projects--skills li{
+            margin-right: 5px
+    }
     }
 
 footer{
@@ -660,5 +733,36 @@ footer .misc {
 .contact {
     background-color: #da7701;
     height: 300px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
 }
+
+.contact--content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0;
+    }
+
+.contact--text {
+        font-size: 1.6rem;
+    }
+
+.contact--social-icon {
+        width: 40px;
+        margin: 20px;
+        
+    }
+
+@media (min-width: 1200px){
+
+.contact--social-icon {
+            width: 50px;
+            margin: 30px
+        
+    }
+    }
 

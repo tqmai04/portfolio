@@ -1,8 +1,8 @@
 .wrapper{
-    margin: 0 20px;
+    margin: 0 5px;
     overflow: hidden;
     
-    @mixin atMedium{
+    @mixin atMedium {
         margin: 0 8%;
     }
 
