@@ -1,7 +1,12 @@
 footer{
-    background-color: $mainGray;
+    
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    padding: 20px;
+
+
+    .misc {
+        background-color: $mainGray;
+        padding: 20px;
+    }
 }

@@ -1,8 +1,49 @@
 .projects{
-    
-    
+    text-align: center;
+    color: $mainBlue;
+    width: 800px;
+    margin: 0 auto;
+
     h3 {
         color: $mainOrange;
-        text-align: left;
+    }
+
+    a {
+        color: $mainOrange;
+        text-decoration: none;
+    }
+
+    &--sample{
+        padding-bottom: 2rem;
+    }
+
+    &--image {
+        width: 600px;;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &--btn {
+        border: 2px solid $mainGray;
+        background-color: #FFF;
+        text-align: center;
+        padding: 10px 20px;
+        color: $mainOrange;
+        border-radius: 8px;
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    &--btn:hover {
+        background-color: $mainOrange;
+        color: $mainBlue;
+        cursor: pointer;
+        border: 2px solid $mainOrange;
+    }
+
+    &--skills li{
+        background-color: $mainGray;
+        color: #FFF;
+        margin-right: 5px;
     }
 }

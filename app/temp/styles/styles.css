@@ -370,6 +370,11 @@ html {
     font-size: 16px;
 }
 
+p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+}
+
 ul {
     list-style: none;
     display: block;
@@ -553,8 +558,8 @@ nav{
 
 .about {
     background-color: #101829;
-    color: white;
-    padding: 1.4rem;
+    color: #a8a8a8;
+    padding: 1.4rem 0 4rem 0;
 }
 
 .about img{
@@ -564,9 +569,7 @@ nav{
     }
 
 .about p {
-        color: #a8a8a8;
         text-align: center;
-        font-size: 1.2rem;
     }
 
 .row::after {
@@ -583,16 +586,79 @@ nav{
     }
     }
 
+.projects{
+    text-align: center;
+    color: #101829;
+    width: 800px;
+    margin: 0 auto;
+}
+
 .projects h3 {
         color: #da7701;
-        text-align: left;
+    }
+
+.projects a {
+        color: #da7701;
+        text-decoration: none;
+    }
+
+.projects--sample{
+        padding-bottom: 2rem;
+    }
+
+.projects--image {
+        width: 600px;;
+        display: block;
+        margin: 0 auto;
+    }
+
+.projects--btn {
+        border: 2px solid #a8a8a8;
+        background-color: #FFF;
+        text-align: center;
+        padding: 10px 20px;
+        color: #da7701;
+        border-radius: 8px;
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+.projects--btn:hover {
+        background-color: #da7701;
+        color: #101829;
+        cursor: pointer;
+        border: 2px solid #da7701;
+    }
+
+.projects--skills li{
+        background-color: #a8a8a8;
+        color: #FFF;
+        margin-right: 5px;
     }
 
 footer{
-    background-color: #a8a8a8;
+    
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    padding: 20px;
+}
+
+footer .misc {
+        background-color: #a8a8a8;
+        padding: 20px;
+    }
+
+.reveal-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+
+.reveal-item--visible {
+        opacity: 1;
+    }
+
+.contact {
+    background-color: #da7701;
+    height: 300px;
 }
 

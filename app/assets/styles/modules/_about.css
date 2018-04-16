@@ -1,7 +1,7 @@
 .about {
     background-color: $mainBlue;
-    color: white;
-    padding: 1.4rem;
+    color: $mainGray;
+    padding: 1.4rem 0 4rem 0;
 
     img{
         width: 100px;
@@ -10,8 +10,6 @@
     }
 
     p {
-        color: $mainGray;
         text-align: center;
-        font-size: 1.2rem;
     }
 }
