@@ -48,6 +48,7 @@ nav{
             position: absolute;
             bottom: 4rem;
             right: 0;
+            z-index: 0;
         }
 
     }
@@ -61,6 +62,7 @@ nav{
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 3rem;
+        z-index: 10;
 
         @mixin atSmall {
             font-size: 3.0rem;
