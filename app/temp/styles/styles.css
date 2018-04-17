@@ -455,6 +455,7 @@ nav{
 
 .banner {
     position: relative;
+    overflow: hidden;
 }
 
 @media (min-width: 1200px){
@@ -470,7 +471,8 @@ nav{
 .banner__workstation {
             position: absolute;
             bottom: 4rem;
-            right: 0
+            right: 0;
+            z-index: 0
 
     }
     }
@@ -485,6 +487,7 @@ nav{
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 3rem;
+        z-index: 10;
     }
 
 @media (min-width: 530px){
