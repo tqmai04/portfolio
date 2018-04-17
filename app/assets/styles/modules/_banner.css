@@ -37,6 +37,8 @@ nav{
 
 .banner {
     position: relative;
+    overflow: hidden;
+
     @mixin atLarge {
         height: 100vh;
         overflow: hidden;
