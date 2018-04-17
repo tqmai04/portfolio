@@ -51,3 +51,8 @@ body {
     opacity: 0;
     transition: none;
 }
+header {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}

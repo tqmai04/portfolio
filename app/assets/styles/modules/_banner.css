@@ -24,9 +24,8 @@ img{
 }
 
 nav{
-
-    font-size: 1.4rem;
     text-align: center;
+    font-size: 1.4rem;
     clear: both;
     padding-top: 25px;
 
@@ -37,11 +36,21 @@ nav{
 }
 
 .banner {
+    position: relative;
     @mixin atLarge {
         height: 100vh;
+        overflow: hidden;
+    }
+    &__workstation {
+        @mixin atLarge {
+            position: absolute;
+            bottom: 4rem;
+            right: 0;
+        }
+
     }
     &__intro{
-
+        display: block;
         font-size: 1.8rem;
         font-style: normal;
         font-weight: 300;
@@ -64,9 +73,11 @@ nav{
             font-size: 3.6rem;
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
-            margin: 8rem auto;
+            margin: 0;
+            padding: 2rem 0;
         }
     }
+
 
     &__blueText {
         color: $mainBlue;

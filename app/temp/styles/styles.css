@@ -401,6 +401,12 @@ body {
     transition: none;
 }
 
+header {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
 ul {
     list-style: none;
     display: block;
@@ -433,9 +439,8 @@ img{
 }
 
 nav{
-
-    font-size: 1.4rem;
     text-align: center;
+    font-size: 1.4rem;
     clear: both;
     padding-top: 25px;
 }
@@ -448,15 +453,30 @@ nav{
 }
     }
 
+.banner {
+    position: relative;
+}
+
 @media (min-width: 1200px){
 
 .banner {
-        height: 100vh
+        height: 100vh;
+        overflow: hidden
 }
     }
 
-.banner__intro{
+@media (min-width: 1200px){
 
+.banner__workstation {
+            position: absolute;
+            bottom: 4rem;
+            right: 0
+
+    }
+    }
+
+.banner__intro{
+        display: block;
         font-size: 1.8rem;
         font-style: normal;
         font-weight: 300;
@@ -489,7 +509,8 @@ nav{
             font-size: 3.6rem;
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
-            margin: 8rem auto
+            margin: 0;
+            padding: 2rem 0
     }
     }
 
