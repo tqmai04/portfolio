@@ -434,10 +434,6 @@ ul li {
     }
     }
 
-img{
-   width: 100%;
-}
-
 nav{
     text-align: center;
     font-size: 1.4rem;
@@ -453,27 +449,55 @@ nav{
 }
     }
 
+@media (min-width: 1200px){
+
+nav{
+        height: 100px
+}
+    }
+
 .banner {
-    position: relative;
     overflow: hidden;
 }
 
 @media (min-width: 1200px){
 
 .banner {
-        height: 100vh;
-        overflow: hidden
+        height: 100vh
 }
     }
 
 @media (min-width: 1200px){
 
 .banner__workstation {
-            position: absolute;
-            bottom: 3rem;
-            right: 0;
-            z-index: 0
+            height: calc(100% - 300px);
+            position: relative
+    }
+    }
 
+@media (min-width: 1200px){
+
+.banner__text {
+        position: absolute;
+        bottom: 0
+
+    }
+    }
+
+.banner__image {
+        margin-bottom: 3rem;
+    }
+
+@media (min-width: 1200px){
+
+.banner__image {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            left: 0;
+            margin: 0
     }
     }
 
@@ -485,9 +509,8 @@ nav{
         letter-spacing: 0.1rem;
         line-height: 3.0rem;
         text-align: center;
-        margin-top: 4rem;
-        margin-bottom: 3rem;
-        z-index: 10;
+        height: 200px;
+        margin-top: 3rem;
     }
 
 @media (min-width: 530px){
@@ -509,11 +532,11 @@ nav{
 @media (min-width: 1200px){
 
 .banner__intro{
+            position: relative;
             font-size: 3.6rem;
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
-            margin: 0;
-            padding: 2rem 0
+            margin: 0
     }
     }
 
@@ -703,8 +726,7 @@ nav{
 @media (min-width: 800px){
 
 .projects--image {
-            width: 600px;
-            border: 1px solid #a8a8a8
+            width: 600px
     }
     }
 

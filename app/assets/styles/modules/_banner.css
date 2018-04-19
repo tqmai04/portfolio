@@ -19,9 +19,7 @@ ul {
         }
     }
 }
-img{
-   width: 100%;
-}
+
 
 nav{
     text-align: center;
@@ -33,25 +31,49 @@ nav{
         padding-top: 25px;
         float: right;
     }
+    
+    @mixin atLarge {
+        height: 100px;
+    }
 }
 
 .banner {
-    position: relative;
     overflow: hidden;
 
     @mixin atLarge {
         height: 100vh;
-        overflow: hidden;
-    }
-    &__workstation {
-        @mixin atLarge {
-            position: absolute;
-            bottom: 3rem;
-            right: 0;
-            z-index: 0;
-        }
 
     }
+
+    &__workstation {
+
+        @mixin atLarge {
+            height: calc(100% - 300px);
+            position: relative;
+        }
+    }
+
+    &__text {
+        @mixin atLarge {
+        position: absolute;
+        bottom: 0;
+    }
+
+    }
+
+    &__image {
+        margin-bottom: 3rem;
+
+        @mixin atLarge {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            margin: 0;
+        }
+    }
+
     &__intro{
         display: block;
         font-size: 1.8rem;
@@ -60,9 +82,8 @@ nav{
         letter-spacing: 0.1rem;
         line-height: 3.0rem;
         text-align: center;
-        margin-top: 4rem;
-        margin-bottom: 3rem;
-        z-index: 10;
+        height: 200px;
+        margin-top: 3rem;
 
         @mixin atSmall {
             font-size: 3.0rem;
@@ -74,11 +95,11 @@ nav{
             text-align: left;
         }
         @mixin atLarge{
+            position: relative;
             font-size: 3.6rem;
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
             margin: 0;
-            padding: 2rem 0;
         }
     }
 
