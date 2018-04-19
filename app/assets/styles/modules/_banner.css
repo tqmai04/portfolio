@@ -84,7 +84,7 @@ nav{
         text-align: center;
         height: 200px;
         margin-top: 3rem;
-
+        
         @mixin atSmall {
             font-size: 3.0rem;
             line-height: 4.0rem;
