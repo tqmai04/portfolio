@@ -7,8 +7,13 @@
         margin: 0 auto;
         padding: 1.4rem 0 0 0;
     }
-    h3 {
+
+    h2 {
         color: $mainOrange;
+    }
+
+    h3 {
+        color: $mainBlue;
         margin: 0;
         margin-bottom: 1em;
     }
@@ -19,9 +24,19 @@
     }
 
     &--sample{
-        border-bottom: 1px solid $mainGray;
+        padding-bottom: 2em;
         margin-bottom: 2em;
+        position: relative;
 
+        ::before {
+            content: "";
+            position: absolute;
+            left: 40%;
+            bottom: 0;
+            height: 1px;
+            width: 20%;
+            border-bottom: 4px solid $mainOrange;
+        }
         &:last-child {
             border-bottom: none;
             margin-bottom: none;

@@ -720,8 +720,12 @@ nav{
 }
     }
 
-.projects h3 {
+.projects h2 {
         color: #da7701;
+    }
+
+.projects h3 {
+        color: #101829;
         margin: 0;
         margin-bottom: 1em;
     }
@@ -732,9 +736,20 @@ nav{
     }
 
 .projects--sample{
-        border-bottom: 1px solid #a8a8a8;
+        padding-bottom: 2em;
         margin-bottom: 2em;
+        position: relative;
     }
+
+.projects--sample ::before {
+            content: "";
+            position: absolute;
+            left: 40%;
+            bottom: 0;
+            height: 1px;
+            width: 20%;
+            border-bottom: 4px solid #da7701;
+        }
 
 .projects--sample:last-child {
             border-bottom: none;
