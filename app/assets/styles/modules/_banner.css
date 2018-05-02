@@ -118,7 +118,7 @@ nav{
             transform: translateY(-50%);
             right: 0;
             height: 45vh;
-            width: auto;
+            width: 100%;
             margin: 0;
         }
     }
