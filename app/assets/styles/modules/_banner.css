@@ -53,12 +53,13 @@ nav{
         display: block;
         font-size: 1.8rem;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: 0.1rem;
         line-height: 3.0rem;
         text-align: center;
         height: 200px;
-        margin-top: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
         
         @mixin atSmall {
             font-size: 3.0rem;
@@ -75,7 +76,6 @@ nav{
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
             margin: 0;
-            font-weight: 500;
             height: 30vh;
         }
     }
