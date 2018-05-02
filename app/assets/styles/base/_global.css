@@ -13,6 +13,9 @@ h2{
 
     @mixin atLarge {
         font-size: 2rem;
+        @mixin atLarge {
+            font-weight: 500;
+        }
     }
 }
 
@@ -23,6 +26,9 @@ h3{
     font-weight: 300;
     letter-spacing: normal;
     line-height: 2.4rem;
+    @mixin atLarge {
+        font-weight: 500;
+    }
 }
 
 * {
@@ -45,6 +51,7 @@ p {
 body {
     opacity: 1;
     transition: 1.5s opacity;
+
 }
 
 .fade-out {

@@ -10,6 +10,10 @@ ul {
             text-decoration: none;
             color: $mainBlue;
             font-weight: 300;
+
+            @mixin atLarge {
+                font-weight: 500;
+            }
         }
 
         @mixin atMedium {
@@ -17,6 +21,7 @@ ul {
             margin-right: 80px;
             border-bottom: none;
         }
+
     }
 }
 
@@ -42,7 +47,6 @@ nav{
 
     @mixin atLarge {
         height: 100vh;
-
     }
 
     &__workstation {
@@ -100,6 +104,7 @@ nav{
             letter-spacing: 0.2rem;
             line-height: 5.4rem;
             margin: 0;
+            font-weight: 500;
         }
     }
 
