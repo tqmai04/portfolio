@@ -38,7 +38,7 @@ nav{
     }
     
     @mixin atLarge {
-        height: 100px;
+        height: 12vh;
     }
 }
 
@@ -47,35 +47,6 @@ nav{
 
     @mixin atLarge {
         height: 100vh;
-    }
-
-    &__workstation {
-
-        @mixin atLarge {
-            height: calc(100% - 300px);
-            position: relative;
-        }
-    }
-
-    &__text {
-        @mixin atLarge {
-        position: absolute;
-        bottom: 0;
-    }
-
-    }
-
-    &__image {
-        margin-bottom: 3rem;
-
-        @mixin atLarge {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            margin: 0;
-        }
     }
 
     &__intro{
@@ -105,8 +76,21 @@ nav{
             line-height: 5.4rem;
             margin: 0;
             font-weight: 500;
+            height: 30vh;
         }
     }
+
+    &__text {
+        @mixin atLarge {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    }
+
+    
 
 
     &__blueText {
@@ -116,6 +100,30 @@ nav{
     &__orgText{
         color: $mainOrange;
     }
+
+    &__workstation {
+
+        @mixin atLarge {
+            height: 55vh;
+            position: relative;
+        }
+    }
+
+    &__image {
+        margin-bottom: 3rem;
+
+        @mixin atLarge {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            height: 45vh;
+            width: auto;
+            margin: 0;
+        }
+    }
+
+    
 }
 
 .menu-icon{
